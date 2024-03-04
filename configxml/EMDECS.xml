@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel" thread-count="1" parallel="classes">
+    <test name="SingleTestEnv1">
+        <parameter name="config" value="activeimportantcount.conf.json"/>
+        <parameter name="environment" value="env1"/>
+        <classes>
+       <!--     <class name="tests.administration.CustomerTest"/>
+            <class name="tests.administration.VendorsTest"/>
+            <class name="tests.fleet.CreateUnitTest"/>
+            <class name="tests.fleet.SetUpWorkRequiredTest"/>
+            <class name="tests.fleet.CreateRedTagDMSTest"/>
+            <class name="tests.parts.JournalizePartsTest"/>
+            <class name="tests.parts.PartsRelatedItemTest"/>  -->
+            <class name="tests.parts.CounterSaleManagerTest"/>
+            <class name="tests.parts.ReceivePartsTest"/>
+             <class name="tests.parts.OrderPartsTest"/>
+            <class name="tests.service.CreateRoTest"/>
+            <class name="tests.service.UnitFunctionalityTest"/>
+            <class name="tests.service.UpdatePoNumberTest"/>
+            <class name="tests.service.AddRemoveLabourTest"/>
+            <class name="tests.service.ServiceManagerLaborTest"/>
+            <class name="tests.tech.WoLaborTest"/>
+            <class name="tests.tech.WoPartsTest"/>
+
+
+
+        </classes>
+    </test>
+</suite>
